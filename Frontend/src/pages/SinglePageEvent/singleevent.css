@@ -1,0 +1,99 @@
+.single-event-container {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.single-event-card {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 20px 30px;
+}
+
+.event-title {
+  font-size: 2.2rem;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.event-description {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.seats-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.seats-left {
+  font-weight: bold;
+}
+
+.seats-left.available {
+  color: #16a34a; /* Green */
+}
+
+.seats-left.sold-out {
+  color: #dc2626; /* Red */
+}
+
+.total-seats {
+  color: #888888;
+}
+
+.book-button {
+  display: inline-block;
+  background-color: #fe7743;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #e46330;
+}
+
+.book-button.disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .event-title {
+    font-size: 1.8rem;
+  }
+
+  .event-description {
+    font-size: 1rem;
+  }
+
+  .book-button {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,42 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fe7743;
+  color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar__singup {
+  background-color: #fff;
+  color: #fe7743;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar__login {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar__button:hover {
+  background-color: #f0f0f0;
+  color: #fe7743;
+}

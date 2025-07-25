@@ -1,0 +1,111 @@
+.tickets-page {
+  background-color: #f3f4f6;
+  min-height: 90vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tickets-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.no-tickets {
+  text-align: center;
+  color: #777;
+  font-size: 1.2rem;
+}
+
+.tickets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ticket-card {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-3px);
+}
+
+.qr-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.ticket-info {
+  flex: 1;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.event-date {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.ticket-id {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ticket-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .qr-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .event-title {
+    font-size: 1.3rem;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ticket-card {
+    padding: 15px;
+  }
+
+  .event-title {
+    font-size: 1.1rem;
+  }
+
+  .event-date,
+  .ticket-id {
+    font-size: 0.9rem;
+  }
+}
