@@ -88,11 +88,14 @@ import FilterBar from "../../components/Filters/filterbar";
 import "./event.css";
 import { getEvents } from "../../api/events";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router";
 
 function Events() {
   const [events, SetEvents] = useState([]);
   const [sort, setSort] = useState("newwst");
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -114,7 +117,18 @@ function Events() {
     <>
       <Navbar />
       <div className="events-page">
-        <h1 className="events-page__title">All Events</h1>
+       
+        <div className="events-page__header">
+  <div className="spacer" />
+  <h1 className="events-page__title">All Events</h1>
+  <button
+    className="add-event-button"
+    onClick={() => navigate("/addevent")}
+  >
+    Add Event
+  </button>
+</div>
+
         <FilterBar sort={sort} setSort={setSort} />
         {loading ? (
           <p>loading...</p>
