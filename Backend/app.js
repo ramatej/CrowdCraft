@@ -35,6 +35,7 @@ const connectDb = require("./db");
 const usersRouter = require("./routes/users");
 const eventsRouter = require("./routes/events");
 const bookingRouter = require("./routes/bookings");
+const authRoutes = require('./routes/logout');
 
 require("dotenv").config();
 const cors = require("cors");
@@ -60,6 +61,8 @@ app.use("/api/v1/users", usersRouter);
 app.use("/api/v1/events", eventsRouter);
 
 app.use("/api/v1/bookings", bookingRouter);
+
+app.use("/api/v1", authRoutes);
 
 const PORT = process.env.PORT ?? 3001;
 

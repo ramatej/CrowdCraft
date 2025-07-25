@@ -40,3 +40,19 @@
   background-color: #f0f0f0;
   color: #fe7743;
 }
+
+.navbar__logout {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__logout:hover {
+  background-color: #b91c1c;
+}
